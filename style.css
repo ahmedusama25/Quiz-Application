@@ -1,0 +1,54 @@
+body{
+    background: rgb(34,193,195);
+    background: linear-gradient(90deg, rgba(34,193,195,1) 20%, rgba(217,150,163,0.24693627450980393) 70%);
+    color: lightgray brown;
+    padding-right: 10px;
+}
+
+
+.Quiz{
+    text-align: center;    
+}
+
+
+.Quiz input{
+    border-style: none;
+    width: 100%;
+}
+
+
+.Quiz table{
+    margin: 0 auto;
+    padding: 10px ;
+}
+
+
+ .PInfo tr{
+    margin: 10px;
+ }
+
+
+input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rebeccapurple;
+  }
+
+button{
+    padding: 10px;
+    border-style: none;
+    border-radius: 20%;
+}
+button:hover{
+    background-color:royalblue;
+    border-style: none;
+
+}
+ 
+
+button:active{
+    border-style: none !important;
+    border-color:2px solid wheat;
+    margin-top: 2px;
+}
