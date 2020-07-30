@@ -3,6 +3,7 @@ body{
     background: linear-gradient(90deg, rgba(34,193,195,1) 20%, rgba(217,150,163,0.24693627450980393) 70%);
     color: lightgray brown;
     padding-right: 10px;
+    text-align: center;
 }
 
 
@@ -51,4 +52,34 @@ button:active{
     border-style: none !important;
     border-color:2px solid wheat;
     margin-top: 2px;
+}
+.hidden{
+    display: none;
+}
+ .Questions{
+    background-color: violet;
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify ;
+    padding-left: 2%;
+    visibility: hidden;
+    
+    
+    
+}
+.Questions h1{
+    text-align: center;
+}
+
+@media only screen and (max-width:600px){
+    .Questions{
+        width: 100%;
+    }
+}
+.aa{
+    position: absolute;
+    top: 10px;
+    left: 20%;
+    visibility: visible;
+    
 }
