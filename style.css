@@ -49,7 +49,6 @@ button:hover{
 
 }
  
-
 button:active{
 
     margin-top: 2px !important;
@@ -58,7 +57,7 @@ button:active{
 .hidden{
     display: none;
 }
- .Questions{
+.Questions{
     background-color: violet;
     width: 60%;
     margin: 0 auto;
@@ -88,7 +87,13 @@ button:active{
     position: absolute;
     top: 10px;
     left: 20%;
-
+    
     display: block;
     
+}
+
+
+
+.Result{
+display: block;
 }

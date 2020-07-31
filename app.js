@@ -22,47 +22,68 @@ function submit(){
     //console.log(quiz[0].getAttribute("class"))
 }
 
-
+var count = 0;
 
 function Answers(){
 
-        var Q1= document.getElementById("Q1");
-        var Q2 = document.getElementById("Q2");
-        var Q3 = document.getElementById("Q3");
-        var Q4 = document.getElementById("Q4");
-        var count =0;
-        
-        
-        for(var i=0;i<Q1.childNodes.length;i++){
-            if( Q1.childNodes[i].nodeType == 1){
-                //Question 1 answer
-                if (Q1.childNodes[i].checked == true){
-                    if(Q1.childNodes[i].value == "Quadi-e-Azam"){
-                        count++
-                    }
-                }
+    var Q1= document.getElementById("Q1");
+    var Q2 = document.getElementById("Q2");
+    var Q3 = document.getElementById("Q3");
+    var Q4 = document.getElementById("Q4");
 
-                //Question 2 answer
-                if (Q2.childNodes[i].checked == true){
-                    if(Q2.childNodes[i].value == "Charles Babage"){
-                        count++
-                    }
+    
+    //Answers Checking        
+    for(var i=0;i<Q1.childNodes.length;i++){
+        if( Q1.childNodes[i].nodeType == 1){
+            //Question 1 answer
+            if (Q1.childNodes[i].checked == true){
+                if(Q1.childNodes[i].value == "Quadi-e-Azam"){
+                    count++
                 }
-
-                //Question 3 answer
-                if (Q3.childNodes[i].checked == true){
-                    if(Q3.childNodes[i].value == "63"){
-                        count++
-                    }
-                }
-                
-                //Question 4 answer
-                if (Q4.childNodes[i].checked == true){
-                    if(Q4.childNodes[i].value == "Arouse Great curiosity in someone"){
-                        count++
-                    }
-                }
-                    console.log(count)       
             }
+            //Question 2 answer
+            if (Q2.childNodes[i].checked == true){
+                if(Q2.childNodes[i].value == "Charles Babage"){
+                    count++
+                }
+            }
+            //Question 3 answer
+            if (Q3.childNodes[i].checked == true){
+                if(Q3.childNodes[i].value == "63"){
+                    count++
+                }
+            }
+            
+            //Question 4 answer
+            if (Q4.childNodes[i].checked == true){
+                if(Q4.childNodes[i].value == "Arouse Great curiosity in someone"){
+                    count++
+                }
+            }
+                      
         }
+    }
+    console.log(count) 
+    var Result = document.getElementById("Result")
+    Result.className = "Result"
+    
+    var ResPara = document.getElementById("ResPara")
+    if (count === 4){
+        ResPara.innerHTML = "congrates!"+ name.value + "You have scored 40 Marks"
+    }    
+    if(count===3){
+        ResPara.innerHTML=name.value + ", \n You have scored 30 marks "
+    }
+    if(count===2){
+        ResPara.innerHTML=name.value + ", \n You have scored 20 marks"
+    }
+    if (count==1){
+        ResPara.innerHTML=  + ", \n You have aonly been able to score 10 marks"
+    }
+
+    Questions.className="hidden"
+alert(name)
+
+
+
 }
