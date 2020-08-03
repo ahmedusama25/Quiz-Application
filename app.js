@@ -3,23 +3,12 @@ function submit(){
     var email = document.getElementById("email").value;
     var CNIC  = document.getElementById("CNIC").value;
     var quiz = document.getElementsByTagName("div");
-    quiz[0].style.visibility = "hidden";
+    quiz[0].style.display = "none";
     var Questions = document.getElementById("Questions")
     Questions.className += " aa"
     
 
 
-
-//    var A1 = document.getElementsByName("A1").length
-//    for( var i =0;i<<A1.length;i++){
-//        if(A1[i].checked) 
-//                document.getElementById("result").innerHTML
-//                        = "Gender: "+A[i].value;
-//    }
-
-
-
-    //console.log(quiz[0].getAttribute("class"))
 }
 
 var count = 0;
@@ -69,20 +58,21 @@ function Answers(){
     
     var ResPara = document.getElementById("ResPara")
     if (count === 4){
-        ResPara.innerHTML = "congrates!"+ name.value + "You have scored 40 Marks"
+        ResPara.innerHTML = "congrates!"+ name + "You have scored 40 Marks"
     }    
     if(count===3){
-        ResPara.innerHTML=name.value + ", \n You have scored 30 marks "
+        ResPara.innerHTML=name + ", \n You have scored 30 marks "
     }
     if(count===2){
-        ResPara.innerHTML=name.value + ", \n You have scored 20 marks"
+        ResPara.innerHTML=name + ", \n You have scored 20 marks"
     }
     if (count==1){
-        ResPara.innerHTML=  + ", \n You have aonly been able to score 10 marks"
+        ResPara.innerHTML=  + ", \n You have anly been able to score 10 marks"
     }
 
     Questions.className="hidden"
-alert(name)
+
+    console.log(name)
 
 
 
